@@ -1,0 +1,40 @@
+/*
+ * package StepDefinitions;
+ * 
+ * import java.time.Duration;
+ * 
+ * import org.openqa.selenium.By; import org.openqa.selenium.WebDriver; import
+ * org.openqa.selenium.chrome.ChromeDriver; import org.testng.Assert;
+ * 
+ * import io.cucumber.java.en.And; import io.cucumber.java.en.Given; import
+ * io.cucumber.java.en.Then; import io.cucumber.java.en.When;
+ * 
+ * public class LoginStepsDefinitions { static WebDriver driver;
+ * 
+ * @Given("user is on login page") public void user_is_on_login_page() { //
+ * Write code here that turns the phrase above into concrete actions driver =
+ * new ChromeDriver();
+ * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+ * driver.get("https://www.saucedemo.com/"); }
+ * 
+ * @When("user enters {string} and {string}") public void
+ * user_enters_username_and_password(String username, String password) { //
+ * Write code here that turns the phrase above into concrete actions
+ * driver.findElement(By.id("user-name")).sendKeys(username);
+ * driver.findElement(By.id("password")).sendKeys(password); }
+ * 
+ * @And("user clicks on login button") public void user_clicks_on_login_button()
+ * { // Write code here that turns the phrase above into concrete actions
+ * driver.findElement(By.id("login-button")).click(); }
+ * 
+ * @Then("user is navigated to home page") public void
+ * user_is_navigated_to_home_page() { // Write code here that turns the phrase
+ * above into concrete actions //
+ * Assert.assertTrue(driver.findElement(By.class("app_logo")).); }
+ * 
+ * @And("user close the browser") public void user_close_the_browser() { //
+ * Write code here that turns the phrase above into concrete actions
+ * driver.close(); }
+ * 
+ * }
+ */
